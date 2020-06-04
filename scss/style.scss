@@ -867,19 +867,10 @@ ul,ol {
 
 .article__next {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     margin: 30px 0px;
-
-    i {
-        font-size: 60px;
-        color: $red;
-        background-color: #fff;
-        padding: 0 8px;
-        position: relative;
-         z-index: 1;
-    }
 
      P {
          padding: 0 8px;
@@ -915,4 +906,87 @@ ul,ol {
         font-weight: 700;
         margin-top: 8px;
     }
+}
+
+.article__box .news__title {
+    margin-top: 40px;
+}
+
+.sticky {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 9999;
+}
+
+.header-sub {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute; top: 70px; left: 0px;
+}
+
+.header-sub-active {
+    display: block;
+}
+
+.nav-block {
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.nav-sub {
+    width: 320px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 24px;
+
+    a {
+        display: inline-block;
+        color: #888;
+        margin-top: 16px;
+    }
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+.slick-prev {
+    width: auto;
+    height: auto;
+    top: -40px;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding-right: 10px;
+}
+
+.slick-prev:hover {
+    background-color: #fff;
+}
+.slick-next:hover {
+    background-color: #fff;
+}
+.slick-prev:focus {
+    background-color: #fff;
+}
+.slick-next:focus {
+    background-color: #fff;
+}
+
+.slick-next {
+    width: auto;
+    height: auto;
+    top: -40px;
+    right: 0;
+    z-index: 2;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.slick-prev::before,.slick-next::before {
+    color: $red;
+    opacity: 1;
+    font-size: 60px;
 }
