@@ -14,6 +14,25 @@
 }
 
 @media screen and (max-width: 979px) {
+    .footer-d {
+        flex-wrap: wrap !important;
+    }
+
+    .footer-logo-img {
+        width: 50% !important;
+        margin: 24px auto;
+    }
+
+    .footer-d .footer__soc {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__nav li {
+        width: 100%;
+        text-align: center;
+    }
+
     .str__bottom {
         flex-wrap: wrap;
     }
@@ -121,8 +140,6 @@
     }
 
     .footer__logo a {
-        width: 123px;
-        height: 30px;
         margin: 0 auto;
         margin-bottom: 16px;
     }
@@ -162,6 +179,14 @@
 
     .news__title h3 {
         font-size: 24px;
+    }
+
+    .error {
+        padding: 100px 0;
+    }
+
+    .error-p {
+        font-size: 100px;
     }
 }
 
